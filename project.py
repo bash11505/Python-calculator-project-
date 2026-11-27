@@ -76,7 +76,7 @@ keys = [
     ("1", 4, 0), ("2", 4, 1), ("3", 4, 2), ("+", 4, 3),
     ("0", 5, 0), (".", 5, 1), ("(", 5, 2), (")", 5, 3),
 ]
-for text, row, column in keys:
+for text, column , row  in keys:
     tk.Button(root, text=text, width=5, height=2, font=("Arial", 14),
               command=lambda value=text: press(value)
               ).grid(row=row, column=column, padx=3, pady=3)
